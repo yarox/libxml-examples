@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mi_casa>
+  <habitacion id="comedor">
+    <aparador/>
+    <silla>soy una silla</silla>
+  </habitacion>
+  <habitacion id="salon">
+    <mesa/>
+    <silla/>
+    <espejo/>
+  </habitacion>
+</mi_casa>
