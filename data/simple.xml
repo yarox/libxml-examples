@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mi_casa>
-  <habitacion id="comedor">
-    <aparador/>
-    <silla>soy una silla</silla>
-  </habitacion>
-  <habitacion id="salon">
-    <mesa/>
-    <silla/>
-    <espejo/>
-  </habitacion>
-</mi_casa>
+<house>
+  <room id="dining room">
+    <table/>
+    <chair>this is a chair</chair>
+  </room>
+  <room id="bedroom">
+    <chair color="red"/>
+    <mirror/>
+    <lamp/>
+    <bed>a bed for two</bed>
+  </room>
+  <room id="kitchen">
+    <table size="big" color="blue">a big blue table</table>
+    <chair color="blue"/>
+    <chair color="red"/>
+  </room>
+</house>
