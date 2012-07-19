@@ -42,3 +42,4 @@ Open a terminal, navigate to `src/c` and run:
 # References
 1. http://infohost.nmt.edu/tcc/help/pubs/pylxml/web/index.html
 2. http://lxml.de/tutorial.html
+3. http://www.w3schools.com/xpath/
