@@ -119,9 +119,9 @@ main (int argc, char **argv)
     char *docname, *description, *time, *name, *value, *type;
     xmlChar *xpath, *ns_prefix[2], *ns_uri[2];
     xmlXPathObjectPtr result1, result2;
-    int i, size, num_children;
     xmlNodePtr node1, node2;
     xmlDocPtr doc;
+    int i;
     
     
 	doc = getdoc("../../data/namespaces.xml");
@@ -155,7 +155,7 @@ main (int argc, char **argv)
     xpath = BAD_CAST "//ems:Job[@criticalEntry=\"critical\"]/ems:startSpec";
     result2 = getnodeset(doc, xpath, ns_prefix, ns_uri, 2);
 
-    if (result1)
+    if (result1 && result2)
     {     
         for(i = 0; i < 5; i++)
         {  
