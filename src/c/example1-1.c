@@ -18,7 +18,8 @@ getdoc (char *docname)
 	
 	doc = xmlParseFile(docname);
 	
-	if (doc == NULL ) {
+	if (doc == NULL ) 
+	{
 		fprintf(stderr, "Document not parsed successfully.\n");
 		return NULL;
 	}
