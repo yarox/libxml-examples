@@ -28,8 +28,8 @@ Open a terminal, navigate to `src/c` and run:
 2. Create a document with namespaces. 
 
 ## 3. Finding elements in an XML document
-1. Finding elements in a simple document.
-2. Finding elements in a document with namespaces.
+1. Find elements in a simple document.
+2. Find elements in a document with namespaces.
 
 ## 4. Modifying an existing XML document
 1. Create new node.
