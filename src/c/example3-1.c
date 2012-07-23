@@ -9,28 +9,30 @@ Find elements in a simple XML document.
 
 #include <libxml/xpathInternals.h>
 #include <libxml/parser.h>
-#include <libxml/tree.h>
 #include <libxml/xpath.h>
+#include <libxml/tree.h>
 
 
 
 char
 *strip(char *str)
 {
-  char *end;
+	char *end;
 
-  // Trim leading space
-  while(isspace(*str)) str++;
 
-  if(*str == 0)  // All spaces?
+  	// Trim leading space
+  	while(isspace(*str)) str++;
+
+	// All spaces?
+  	if(*str == 0)
     return NULL;
 
-  // Trim trailing space
-  end = str + strlen(str) - 1;
-  while(end > str && isspace(*end)) end--;
+  	// Trim trailing space
+  	end = str + strlen(str) - 1;
+  	while(end > str && isspace(*end)) end--;
 
-  // Write new null terminator
-  *(end + 1) = 0;
+  	// Write new null terminator
+  	*(end + 1) = 0;
 
   return str;
 }
@@ -40,6 +42,7 @@ print_text_nodes(xmlNode *a_node)
 {
     xmlNode *cur_node = NULL;
     xmlChar *content;
+
 
     for (cur_node = a_node; cur_node; cur_node = cur_node->next) 
     {
@@ -61,6 +64,8 @@ xmlDocPtr
 getdoc (char *docname) 
 {
 	xmlDocPtr doc;
+	
+	
 	doc = xmlParseFile(docname);
 	
 	if (doc == NULL ) 
@@ -78,6 +83,7 @@ getnodeset (xmlDocPtr doc, xmlChar *xpath, xmlChar *ns_prefix, xmlChar *ns_uri)
 	int status;
 	xmlXPathContextPtr context;
 	xmlXPathObjectPtr result;
+
 
 	context = xmlXPathNewContext(doc);
 	
