@@ -4,6 +4,7 @@ Create an XML document including different nodes.
 */
 
 #include <stdio.h>
+
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 
