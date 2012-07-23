@@ -1,5 +1,5 @@
 # libxml-examples
-Some __libxml__ examples for __C__ and __Python__, featuring some common 
+__libxml__ examples for __C__ and __Python__, featuring some common 
 actions.
 
 # Dependecies
