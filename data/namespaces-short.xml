@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns1:root xmlns:ns1="http://a.b/c" xmlns:ns2="http://d.e/f" xmlns:ns3="http://g.h/i" ns3:schemaLocation="http://some/where schema.xsd">
+  <ns1:child1/>
+  <ns2:child2 property="value"/>
+  <child3 ns3:foo="prefixed property name"/>
+  <child4 bar="ns1:prefixed_value"/>
+</ns1:root>
